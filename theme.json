@@ -41,7 +41,7 @@
           "foreground": "#4285F4",
           "style": "plain",
           "powerline_symbol": "\ue0b4",
-          "template": " <#ffffff>\uf270 </> {{.Profile}}",
+          "template": " <#ffffff>\uf270</>  {{.Profile}}",
           "type": "aws"
         }
       ],
