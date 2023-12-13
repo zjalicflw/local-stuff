@@ -30,7 +30,7 @@
         },
         {
         "type": "time",
-        "foreground": "#ff8400",
+        "foreground": "#f79733",
         "properties": {
           "time_format": "15:04:05"
         },
