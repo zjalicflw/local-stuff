@@ -49,10 +49,10 @@
     },
     {
       "alignment": "left",
-      "newline": true,
+      "newline": false,
       "segments": [
         {
-          "foreground": "#FFE45E",
+          "foreground": "#b4fa54",
           "style": "plain",
           "template": "\u276f ",
           "type": "text"
