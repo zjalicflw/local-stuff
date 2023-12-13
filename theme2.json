@@ -6,7 +6,7 @@
       "segments": [
         {
         "type": "time",
-        "foreground": "#f79733",
+        "foreground": "#b4fa54",
         "properties": {
           "time_format": "15:04:05"
         },
@@ -14,7 +14,7 @@
         "template": "{{ .CurrentDate | date .Format }}"
         },
         {
-          "foreground": "#15C2CB",
+          "foreground": "#b4fa54",
           "properties": {
             "style": "folder"
           },
@@ -23,7 +23,7 @@
           "type": "path"
         },
         {
-          "foreground": "#5300d8",
+          "foreground": "#b4fa54",
           "properties": {
             "branch_icon": "\ue0a0 "
           },
@@ -38,7 +38,7 @@
           "type": "project"
         },
         {
-          "foreground": "#4285F4",
+          "foreground": "#fab74b",
           "style": "plain",
           "powerline_symbol": "\ue0b4",
           "template": " <#ffffff>\uf270</>  {{.Profile}}",
@@ -54,7 +54,7 @@
         {
           "foreground": "#b4fa54",
           "style": "plain",
-          "template": "\u276f ",
+          "template": " \u276f ",
           "type": "text"
         }
       ],
