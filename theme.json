@@ -5,12 +5,21 @@
       "alignment": "left",
       "segments": [
         {
+        "type": "time",
+        "foreground": "#f79733",
+        "properties": {
+          "time_format": "15:04:05"
+        },
+        "style": "plain",
+        "template": "{{ .CurrentDate | date .Format }}"
+        },
+        {
           "foreground": "#15C2CB",
           "properties": {
             "style": "folder"
           },
           "style": "plain",
-          "template": "{{ .Path }} ",
+          "template": " <#ffffff>|</> {{ .Path }} ",
           "type": "path"
         },
         {
@@ -27,15 +36,6 @@
           "style": "plain",
           "template": "{{if .Version}}<#F3EFF5>is</> \uf487 {{.Version}} {{end}}",
           "type": "project"
-        },
-        {
-        "type": "time",
-        "foreground": "#f79733",
-        "properties": {
-          "time_format": "15:04:05"
-        },
-        "style": "plain",
-        "template": " <#757575>|</> {{ .CurrentDate | date .Format }}"
         },
         {
           "foreground": "#4285F4",
