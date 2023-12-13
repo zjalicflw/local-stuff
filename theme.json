@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#15C2CB",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#5300d8",
+          "properties": {
+            "branch_icon": "\ue0a0 "
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "type": "git"
+        },
+        {
+          "foreground": "#5EADF2",
+          "style": "plain",
+          "template": "{{if .Version}}<#F3EFF5>is</> \uf487 {{.Version}} {{end}}",
+          "type": "project"
+        },
+        {
+        "type": "time",
+        "foreground": "#ff8400",
+        "properties": {
+          "time_format": "15:04:05"
+        },
+        "style": "plain",
+        "template": " <#757575,>|</> {{ .CurrentDate | date .Format }}"
+        },
+        {
+          "foreground": "#ffffff",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b4",
+          "template": "<#ffffff>\uf308</> {{.Context}}{{if .Namespace}} \uf061 {{.Namespace}}{{end}}",
+          "type": "kubectl"
+        },{
+          "foreground": "#4285F4",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b4",
+          "template": " <#ffffff>\uf270</> {{.Profile}}{{if .Region}} \uf061 {{.Region}}{{end}}",
+          "type": "aws"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#FFE45E",
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
