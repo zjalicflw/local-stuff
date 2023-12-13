@@ -38,16 +38,10 @@
         "template": " <#757575,>|</> {{ .CurrentDate | date .Format }}"
         },
         {
-          "foreground": "#ffffff",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b4",
-          "template": "<#ffffff>\uf308</> {{.Context}}{{if .Namespace}} \uf061 {{.Namespace}}{{end}}",
-          "type": "kubectl"
-        },{
           "foreground": "#4285F4",
-          "style": "powerline",
+          "style": "plain",
           "powerline_symbol": "\ue0b4",
-          "template": " <#ffffff>\uf270</> {{.Profile}}{{if .Region}} \uf061 {{.Region}}{{end}}",
+          "template": " <#ffffff>\uf270</> {{.Profile}}",
           "type": "aws"
         }
       ],
