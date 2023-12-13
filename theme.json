@@ -35,13 +35,13 @@
           "time_format": "15:04:05"
         },
         "style": "plain",
-        "template": " <#757575,>|</> {{ .CurrentDate | date .Format }}"
+        "template": " <#757575>|</> {{ .CurrentDate | date .Format }}"
         },
         {
           "foreground": "#4285F4",
           "style": "plain",
           "powerline_symbol": "\ue0b4",
-          "template": " <#ffffff>\uf270</> {{.Profile}}",
+          "template": " <#ffffff>\uf270 </> {{.Profile}}",
           "type": "aws"
         }
       ],
