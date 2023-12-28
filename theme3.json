@@ -16,9 +16,8 @@
         {
           "type": "kubectl",
           "style": "plain",
-          "powerline_symbol": "󱃾",
-          "foreground": "#dc49f7",
-          "template": " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
+          "foreground": "#3282fa",
+          "template": "<#3282fa>󱃾</> {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
           "properties": {
             "context_aliases": {
               "arn:aws:eks:us-east-1:146424907838:cluster/kafka": "kafka-prod",
@@ -32,8 +31,7 @@
             "style": "folder"
           },
           "style": "plain",
-          "powerline_symbol": "",
-          "template": " <#ffffff>|</> {{ .Path }} | ",
+          "template": " <#b4fa54></> {{ .Path }}",
           "type": "path"
         },
         {
@@ -52,10 +50,9 @@
           "type": "project"
         },
         {
-          "foreground": "#fab74b",
+          "foreground": "#faab4b",
           "style": "plain",
-          "powerline_symbol": "󰸏",
-          "template": " <#ffffff></>  {{.Profile}}",
+          "template": " <#faab4b>󰸏</>  {{.Profile}}",
           "type": "aws"
         }
       ],
