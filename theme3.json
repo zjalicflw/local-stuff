@@ -19,7 +19,7 @@
             "style": "folder"
           },
           "style": "plain",
-          "template": " <#b4fa54></> {{ .Path }}",
+          "template": " <#b4fa54> </> {{ .Path }}",
           "type": "path"
         },
         {
@@ -52,7 +52,7 @@
         {
           "foreground": "#faab4b",
           "style": "plain",
-          "template": " <#faab4b>󰸏</> {{.Profile}}",
+          "template": " <#faab4b>󰸏</>{{.Profile}}",
           "type": "aws"
         }
       ],
