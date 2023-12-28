@@ -6,12 +6,21 @@
       "segments": [
         {
           "type": "time",
-          "foreground": "#b4fa54",
+          "foreground": "#ffffff",
           "properties": {
             "time_format": "15:04:05"
           },
           "style": "plain",
-          "template": "{{ .CurrentDate | date .Format }}"
+          "template": "{{ .CurrentDate | date .Format }} "
+        },
+        {
+          "foreground": "#b4fa54",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": " <#b4fa54></> {{ .Path }}",
+          "type": "path"
         },
         {
           "type": "kubectl",
@@ -24,15 +33,6 @@
               "arn:aws:eks:us-east-1:146424907838:cluster/kafka-stage": "kafka-stage"
             }
           }
-        },
-        {
-          "foreground": "#b4fa54",
-          "properties": {
-            "style": "folder"
-          },
-          "style": "plain",
-          "template": " <#b4fa54></> {{ .Path }}",
-          "type": "path"
         },
         {
           "foreground": "#b4fa54",
@@ -52,7 +52,7 @@
         {
           "foreground": "#faab4b",
           "style": "plain",
-          "template": " <#faab4b>󰸏</>  {{.Profile}}",
+          "template": " <#faab4b>󰸏</> {{.Profile}}",
           "type": "aws"
         }
       ],
