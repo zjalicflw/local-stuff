@@ -11,6 +11,7 @@ alias kall="k get all"
 alias kdesc="k describe"
 alias kpods="k get pods"
 alias ksetns="aws eks update-kubeconfig --region us-east-1 --name"
+alias kgetns="kubectl config current-context"
 #   aws
 alias aws-sphn='export AWS_PROFILE=dev'
 alias aws-eb='export AWS_PROFILE='
