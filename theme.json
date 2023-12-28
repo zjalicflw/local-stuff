@@ -57,7 +57,7 @@
       "newline": false,
       "segments": [
         {
-          "foreground": "#b4fa54",
+          "foreground": "#ffffff",
           "style": "plain",
           "template": " ❯ ",
           "type": "text"
