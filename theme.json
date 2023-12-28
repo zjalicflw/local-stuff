@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "time",
+          "foreground": "#ffffff",
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "style": "plain",
+          "template": "{{ .CurrentDate | date .Format }} "
+        },
+        {
+          "type": "kubectl",
+          "style": "plain",
+          "foreground": "#3282fa",
+          "template": "<#3282fa>󱃾</> {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
+          "properties": {
+            "context_aliases": {
+              "arn:aws:eks:us-east-1:146424907838:cluster/kafka": "kafka-prod",
+              "arn:aws:eks:us-east-1:146424907838:cluster/kafka-stage": "kafka-stage"
+            }
+          }
+        },
+        {
+          "foreground": "#faab4b",
+          "style": "plain",
+          "template": "<#faab4b>󰸏</> {{.Profile}} ",
+          "type": "aws"
+        },
+        {
+          "foreground": "#b4fa54",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "<#b4fa54></> {{ .Path }}",
+          "type": "path"
+        },
+        {
+          "foreground": "#b4fa54",
+          "properties": {
+            "branch_icon": " "
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }} ",
+          "type": "git"
+        },
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": false,
+      "segments": [
+        {
+          "foreground": "#b4fa54",
+          "style": "plain",
+          "template": " ❯ ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
