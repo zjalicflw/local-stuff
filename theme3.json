@@ -11,16 +11,7 @@
             "time_format": "15:04:05"
           },
           "style": "plain",
-          "template": "{{ .CurrentDate | date .Format }}  "
-        },
-        {
-          "foreground": "#b4fa54",
-          "properties": {
-            "style": "folder"
-          },
-          "style": "plain",
-          "template": "<#b4fa54></> {{ .Path }}",
-          "type": "path"
+          "template": "{{ .CurrentDate | date .Format }} "
         },
         {
           "type": "kubectl",
@@ -57,6 +48,15 @@
         }
       ],
       "type": "prompt"
+    },
+    {
+          "foreground": "#b4fa54",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "<#b4fa54> </> {{ .Path }}",
+          "type": "path"
     },
     {
       "alignment": "left",
